@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body onload="carregar(2)">
+    <form action="">
+     <p>Praticou algum exercício ?</p>
+        <label for="">Sim</label>
+        <input type="radio" name="algo" id="Sim" onclick="display(event)" onchange="salvar('praticou', event)" value="Sim">
+
+        <label for="">Não</label>
+        <input type="radio" name="algo" id="Não" onclick="display(event)"  onchange="salvar('praticou', event)" value="Não">
+
+        <div id='div'   style="display: none;">
+            <label for="">Qual exercício ?</label>
+            <input type="text" name="" id="exercicioPraticado" onchange="salvar('exercicioPraticado', event)" >
+        </div>
+        
+        
+    </form>
+
+    <a href="index.html"><input type="button" value="Voltar"></a> 
+    <a href="pag3.html"><input type="button" value="Avançar"></a> 
+</body>
+</html>
