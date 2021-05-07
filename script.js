@@ -55,7 +55,7 @@ const carregar = ( pagina) =>{
     Object.keys(pesquisa).forEach((chave) => { 
       let campo =  document.getElementById(String(chave))
       
-
+     console.log(pagina)
       
 
       if(pagina == 1 && (chave == 'nome' || chave == 'Motivo')){
@@ -77,8 +77,8 @@ const carregar = ( pagina) =>{
              
        //     } 
           
-      }else if(pagina = 3  && chave == 'carboidratos' ){
-         console.log('entrou', 'carboidratos')
+      }else if((pagina == 3)  && (chave == 'carboidratos' )){
+         console.log('entrou  dssdf')
           let array = pesquisa['carboidratos']
           console.log(array) 
           array.forEach(elemento => {
